@@ -1,8 +1,12 @@
+import Header from './containers/Header';
+
 function App() {
   return (
-    <>
-      <h1>Wagent landing</h1>
-    </>
+    <div className="w-[75%] mobile:w-[90%] m-auto">
+      <div className="mt-[40px] mobile:mt-4">
+        <Header />
+      </div>
+    </div>
   );
 }
 
