@@ -1,14 +1,14 @@
-import { VariantType } from './Button';
+import { VariantType } from '.';
 
 const buttonCustomStyles = (variant: VariantType) => {
   let buttonStyle;
 
   if (variant === 'bordered') {
     buttonStyle =
-      'border border-[1.5px] border-[#F1F1F1] font-medium text-black';
+      'bg-white border border-[1.5px] border-[#F1F1F1] font-medium text-black';
   } else if (variant === 'simpleWhite') {
     buttonStyle =
-      'border border-[1.5px] border-[#F1F1F1] !py-[6px] shadow-white-shadow font-medium';
+      'bg-white border border-[1.5px] border-[#F1F1F1] !py-[6px] shadow-white-shadow font-medium h-[31px]';
   } else if (variant === 'simpleDark') {
     buttonStyle =
       ' shadow-dark-shadow border border-[1.5px] border-[#000] bg-[#2D322C] text-white font-medium ';

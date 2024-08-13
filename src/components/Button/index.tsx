@@ -27,7 +27,7 @@ const Button = ({
   return (
     <div
       className={cn(
-        'flex justify-center items-center w-full rounded-full py-[7px] text-[12px]',
+        'flex justify-center items-center w-full rounded-full py-[7px] text-[12px] hover:cursor-pointer',
         className,
         buttonCustomStyles(variant),
       )}

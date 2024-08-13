@@ -1,4 +1,7 @@
 import { useState } from 'react';
+
+import Button from '../../components/Button';
+
 import wagentLogo from '../../../public/images/wagent.svg';
 
 const headerTabs = [
@@ -30,10 +33,10 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center h-[60px] rounded-[20px] border border-1 border-[#F1F1F1] px-[24px] py-[6px] ">
+    <header className="flex justify-between items-center h-[60px] w-full rounded-[20px] border border-1 border-[#F1F1F1] px-[24px] py-[6px]">
       <img src={wagentLogo} alt="wagent" />
 
-      <div className="flex justify-center items-center space-x-5 w-auto font-medium mobile:hidden">
+      <div className="flex justify-center items-center space-x-5 w-auto font-medium mobile:hidden z-50">
         {headerTabs.map((x) => (
           <a
             key={x.link}
@@ -48,7 +51,9 @@ const Header = () => {
         ))}
       </div>
 
-      <div>Laaaanch app</div>
+      <div className="w-[85px]">
+        <Button variant="bordered" text="Launch app" />
+      </div>
     </header>
   );
 };
