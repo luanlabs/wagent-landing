@@ -77,7 +77,7 @@ const IntroSection = () => {
         <img
           src={mock}
           alt="an"
-          className="absolute top-[0%] right-0 mobile:hidden desktopFix:right-[-120px]"
+          className="absolute top-[-40px] right-0 mobile:hidden desktopFix:right-[-120px]"
           width={1000}
         />
       </div>

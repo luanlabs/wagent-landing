@@ -7,7 +7,7 @@ import back from '../public/images/Eclipse (2).svg';
 function App() {
   return (
     <section className="w-full relative">
-      <div className="w-[75%] mobile:w-full m-auto mobile:flex-col mobile:justify-center">
+      <div className="w-[75%]  mobile:w-full m-auto mobile:flex-col mobile:justify-center">
         <div className="mt-[30px] mobile:mt-4 w-full mobile:w-[92%] mobile:m-auto">
           <Header />
         </div>
