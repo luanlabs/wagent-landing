@@ -1,8 +1,8 @@
-import Header from './containers/Header';
-import IntroSection from './containers/IntroSection';
+import Header from '@containers/Header';
+import IntroSection from '@containers/IntroSection';
 
-import greenGradiant from '../public/images/Background Gradients.svg';
-import back from '../public/images/Eclipse (2).svg';
+import greenGradient from '@images/BackgroundGradients.svg';
+import greenBackground from '@images/GreenEclipse.svg';
 
 function App() {
   return (
@@ -13,14 +13,16 @@ function App() {
         </div>
         <div className="mt-[80px] mobile:mt-[32px] flex w-full">
           <img
-            src={greenGradiant}
-            alt="an"
-            className="absolute top-[-90px] mobile:hidden right-[2%] -z-10"
+            src={greenGradient}
+            alt="background"
+            draggable={false}
+            className="absolute -top-[90px] mobile:hidden right-[2%] -z-10"
           />
 
           <img
-            src={back}
-            alt="an"
+            src={greenBackground}
+            alt="background"
+            draggable={false}
             className="absolute top-0 right-[20%] opacity-15 mobile:hidden -z-10"
           />
           <IntroSection />

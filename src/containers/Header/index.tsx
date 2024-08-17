@@ -1,8 +1,7 @@
 import { useState } from 'react';
 
-import Button from '../../components/Button';
-
-import wagentLogo from '../../../public/images/wagent.svg';
+import wagentLogo from '@images/wagent.svg';
+import Button from '@components/Button';
 
 const headerTabs = [
   { name: 'Home', link: '/home' },
@@ -33,15 +32,15 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center h-[60px] w-full rounded-[20px] border border-1 border-[#F1F1F1] px-[24px] py-[6px]">
+    <header className="flex justify-between items-center h-[60px] w-full rounded-[20px] border border-1 border-[#F1F1F1] px-[24px] py-[6px] z-50">
       <img src={wagentLogo} alt="wagent" />
 
-      <div className="flex justify-center items-center space-x-5 w-auto font-medium mobile:hidden z-50">
+      <div className="flex justify-center items-center space-x-4 w-auto font-medium mobile:hidden z-50">
         {headerTabs.map((x) => (
           <a
             key={x.link}
             href={x.link}
-            className={`text-[12px] flex items-center justify-center  text-black rounded-[26px] w-auto h-[25px] px-2 ${
+            className={`text-[14px] flex items-center justify-center text-black rounded-[26px] w-auto h-[27px] px-3 select-none ${
               activeTab === x.link ? 'bg-[#F5F5F5]' : ''
             }`}
             onClick={(e) => handleTabClick(e, x.link)}
@@ -51,7 +50,7 @@ const Header = () => {
         ))}
       </div>
 
-      <div className="w-[85px]">
+      <div className="w-[85px] z-50">
         <Button variant="bordered" text="Launch app" />
       </div>
     </header>

@@ -1,19 +1,16 @@
-import Button from '../../components/Button';
-import Box from '../../components/Box';
+import Button from '@components/Button';
 
-import mock from '../../../public/images/15.png';
-import mockMobileSize from '../../../public/images/mock mobileSize.png';
+import Box from '@components/Box';
+
+import mock from '@images/15.png';
+import mockMobileSize from '@images/mockupMobileSize.png';
 
 const IntroSection = () => {
   return (
     <section className="flex w-full z-40">
       <div className="w-[80%] mobile:w-full mobile:m-auto mobile:flex-col mobile:justify-center mobile:items-center">
-        <div className="w-[140px] mobile:m-auto">
-          <Button
-            variant="simpleWhite"
-            text="We are incredible"
-            className="!text-[14px]"
-          />
+        <div className=" w-[140px] mobile:m-auto bg-white border-[1.5px] border-[#F1F1F1] py-[6px] shadow-white-shadow font-medium h-[31px] flex justify-center items-center rounded-full text-[14px] select-none">
+          We are incredible
         </div>
         <h1 className="text-[50px] mobile:text-[26px] text-[#30382E] font-bold mt-3 w-full mobile:text-center mobile:px-1">
           Plug-and-play integration:
@@ -43,7 +40,8 @@ const IntroSection = () => {
               src={mockMobileSize}
               alt="an"
               width={1400}
-              className="desktop:hidden"
+              draggable={false}
+              className="desktop:hidden select-none"
             />
           </div>
           <div className="flex mobile:flex-col mobile:space-y-2 w-full space-x-[32px] mobile:space-x-0 mobile:mt-[35px] mobile:px-6">
@@ -77,7 +75,8 @@ const IntroSection = () => {
         <img
           src={mock}
           alt="an"
-          className="absolute top-[-40px] right-0 mobile:hidden desktopFix:right-[-120px]"
+          className="absolute top-[-40px] right-0 mobile:hidden desktopFix:right-[-120px] select-none"
+          draggable={false}
           width={1000}
         />
       </div>
