@@ -1,17 +1,34 @@
-import Button from './components/Button';
+import Header from '@containers/Header';
+import IntroSection from '@containers/IntroSection';
+
+import greenGradient from '@images/BackgroundGradients.svg';
+import greenBackground from '@images/GreenEclipse.svg';
 
 function App() {
   return (
-    <>
-      <h1>Wagent landing</h1>
-      <div className="w-full flex space-x-3 p-3">
-        <Button variant="bordered" text="Launch App" />
-        <Button variant="simpleWhite" text="Learn more" />
-        <Button variant="simpleDark" text="Launch app" />
-        <Button variant="simpleGreen" text="Our Team" />
-        <Button variant="basicBlack" text="Request Access" />
+    <section className="w-full relative">
+      <div className="w-[75%]  mobile:w-full m-auto mobile:flex-col mobile:justify-center">
+        <div className="mt-[30px] mobile:mt-4 w-full mobile:w-[92%] mobile:m-auto">
+          <Header />
+        </div>
+        <div className="mt-[80px] mobile:mt-[32px] flex w-full">
+          <img
+            src={greenGradient}
+            alt="background"
+            draggable={false}
+            className="absolute -top-[90px] mobile:hidden right-[2%] -z-10"
+          />
+
+          <img
+            src={greenBackground}
+            alt="background"
+            draggable={false}
+            className="absolute top-0 right-[20%] opacity-15 mobile:hidden -z-10"
+          />
+          <IntroSection />
+        </div>
       </div>
-    </>
+    </section>
   );
 }
 
