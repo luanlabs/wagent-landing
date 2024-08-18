@@ -7,7 +7,8 @@ export type VariantType =
   | 'simpleWhite'
   | 'simpleDark'
   | 'simpleGreen'
-  | 'bordered';
+  | 'bordered'
+  | 'simpleWhiteStatic';
 
 interface ButtonProps {
   text?: string;
