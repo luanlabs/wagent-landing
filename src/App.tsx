@@ -6,6 +6,7 @@ import greenGradient from '@images/BackgroundGradients.svg';
 import greenBackground from '@images/GreenEclipse.svg';
 import greenBack from '@images/howitwork/Eclipse.svg';
 import greenBackMobile from '@images/howitwork/Eclipse(3)Mobile.svg';
+import HowAreWe from '@containers/HowAreWe';
 
 function App() {
   return (
@@ -45,6 +46,10 @@ function App() {
             draggable={false}
             className="desktop:hidden absolute -top-[21%] opacity-10 -z-10"
           />
+        </div>
+
+        <div className="mt-[157px]">
+          <HowAreWe />
         </div>
       </div>
     </section>
