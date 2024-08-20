@@ -48,7 +48,7 @@ function App() {
           />
         </div>
 
-        <div className="mt-[157px]">
+        <div className="mt-[157px] mobile:mt-[75px]">
           <HowAreWe />
         </div>
       </div>

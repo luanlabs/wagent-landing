@@ -89,8 +89,8 @@ const HowItWork = () => {
         </div>
       </div>
 
-      <div className="flex-col justify-center items-center space-y-4 mt-[200px] w-[50%] bigScreen:w-[45%] desktop:w-[55%] mobile:w-[100%] m-auto px-5">
-        <div className="w-[103px] m-auto">
+      <div className="flex flex-col justify-center items-center space-y-4 mt-[200px] mobile:mt-[99px] w-[50%] bigScreen:w-[45%] desktop:w-[55%] mobile:w-[100%] m-auto px-5">
+        <div className="w-[103px]">
           <Button variant="simpleWhiteStatic" text="How it works" />
         </div>
         <h1 className="text-center text-[#30382E] text-[40px] mobile:text-[20px] font-bold">

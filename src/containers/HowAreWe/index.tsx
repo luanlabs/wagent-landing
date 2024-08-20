@@ -10,7 +10,7 @@ import chartShotMobile from '@images/who-are-we/Protips(1).svg';
 
 const HowAreWe = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full overflow-hidden space-y-[58px]">
+    <div className="flex flex-col items-center justify-center w-full overflow-hidden space-y-[58px] mobile:space-y-[35px]">
       <div className="flex flex-col items-center justify-center bg-[#F7FAFA] rounded-[20px] relative -z-0 w-[90%] bigScreen:w-full overflow-hidden">
         <div className="w-[103px] mt-[68px]">
           <Button variant="simpleWhiteStatic" text="How it works" />
