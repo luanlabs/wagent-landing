@@ -2,26 +2,7 @@ import { useState } from 'react';
 
 import wagentLogo from '@images/wagent.svg';
 import Button from '@components/Button';
-
-const headerTabs = [
-  { name: 'Home', link: '/home' },
-  {
-    name: 'About',
-    link: '/about',
-  },
-  {
-    name: 'Our Team',
-    link: '/ourteam',
-  },
-  {
-    name: 'How it works',
-    link: '/howitworks',
-  },
-  {
-    name: 'Features',
-    link: '/features',
-  },
-];
+import { headerTabs } from '../../constants/headerLinks';
 
 const Header = () => {
   const [activeTab, setActiveTab] = useState('/home');

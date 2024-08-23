@@ -14,7 +14,7 @@ const buttonCustomStyles = (variant: VariantType) => {
       ' shadow-dark-shadow border-[1.5px] border-[#000] bg-[#2D322C] text-white font-medium hover:bg-[#2D322C]/90';
   } else if (variant === 'simpleGreen') {
     buttonStyle =
-      'shadow-green-shadow bg-[#293429] text-white font-medium hover:bg-[#293429]/90';
+      'shadow-green-shadow bg-[#293429] text-white font-medium !cursor-default';
   } else if (variant === 'basicBlack') {
     buttonStyle = 'bg-[#333633] text-white font-medium hover:bg-[#333633]/90';
   } else if (variant === 'simpleWhiteStatic') {

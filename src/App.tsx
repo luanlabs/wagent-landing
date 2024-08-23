@@ -7,6 +7,7 @@ import greenBackground from '@images/GreenEclipse.svg';
 import greenBack from '@images/howitwork/Eclipse.svg';
 import greenBackMobile from '@images/howitwork/Eclipse(3)Mobile.svg';
 import HowAreWe from '@containers/HowAreWe';
+import Footer from '@containers/Footer';
 
 function App() {
   return (
@@ -51,6 +52,10 @@ function App() {
         <div className="mt-[157px] mobile:mt-[75px]">
           <HowAreWe />
         </div>
+      </div>
+
+      <div className="w-[95%] m-auto mt-[157px] mb-[34px]">
+        <Footer />
       </div>
     </section>
   );
