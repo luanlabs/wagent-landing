@@ -9,7 +9,7 @@ const FeatureCard = ({ title, text, icon }: FeatureCardProps) => {
     <div className="flex items-start justify-center space-x-[26px] mobile:space-x-0 w-auto rounded-[15px] mobile:bg-white mobile:w-[314px] mobile:h-[200px] mobile:flex-col">
       <div className="mobile:hidden">
         <div className="bg-white !h-[76px] !w-[76px] mobile:h-[42px] mobile:w-[42px] flex justify-center items-center rounded-[12px] shadow-box-shadow">
-          <img src={icon} alt="data" />
+          <img src={icon} alt="data" draggable={false} />
         </div>
       </div>
 
@@ -19,6 +19,7 @@ const FeatureCard = ({ title, text, icon }: FeatureCardProps) => {
             src={icon}
             alt="data"
             width={30}
+            draggable={false}
             className="mr-4 desktop:hidden"
           />
 

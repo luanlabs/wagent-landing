@@ -1,12 +1,12 @@
-import Header from '@containers/Header';
-import HowItWork from '@containers/HowItWork';
-import IntroSection from '@containers/IntroSection';
+import IntroSection from '@/containers/IntroSection';
+import HowItWork from '@/containers/HowItWork';
+import HowAreWe from '@/containers/HowAreWe';
+import Header from '@/containers/Header';
 
-import greenGradient from '@images/BackgroundGradients.svg';
-import greenBackground from '@images/GreenEclipse.svg';
-import greenBack from '@images/howitwork/Eclipse.svg';
-import greenBackMobile from '@images/howitwork/Eclipse(3)Mobile.svg';
-import HowAreWe from '@containers/HowAreWe';
+import greenBackground from 'public/images/GreenEclipse.svg';
+import greenBack from 'public/images/how-it-work/Eclipse.svg';
+import greenGradient from 'public/images/BackgroundGradients.svg';
+import greenBackMobile from 'public/images/how-it-work/Eclipse(3)Mobile.svg';
 
 function App() {
   return (

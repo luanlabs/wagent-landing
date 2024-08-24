@@ -1,11 +1,10 @@
-import Button from '@components/Button';
-import FeatureCard from '@components/FeatureCard';
+import Button from '@/components/Button';
+import FeatureCard from '@/components/FeatureCard';
 
-import planet from '@images/howitwork/Planet.svg';
-import dataLogo from '@images/howitwork/data-translate.svg';
-import a from '@images/howitwork/legal.svg';
-
-import br from '@images/howitwork/Group 1000004656.svg';
+import planet from 'public/images/how-it-work/Planet.svg';
+import legalLogo from 'public/images/how-it-work/legal.svg';
+import br from 'public/images/how-it-work/Group1000004656.svg';
+import dataLogo from 'public/images/how-it-work/data-translate.svg';
 
 const HowItWork = () => {
   return (
@@ -36,6 +35,7 @@ const HowItWork = () => {
           src={planet}
           alt="a"
           className="absolute top-[15%] -left-[17%] -z-50 opacity-10 bigScreen:top-[25%] bigScreen:-left-[7%]"
+          draggable={false}
         />
       </div>
 
@@ -53,6 +53,7 @@ const HowItWork = () => {
             src={br}
             alt="space"
             className="mx-[100px] mobile:mx-0 mobile:rotate-90"
+            draggable={false}
           />
 
           <FeatureCard
@@ -60,7 +61,7 @@ const HowItWork = () => {
             text="Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley"
-            icon={a}
+            icon={legalLogo}
           />
         </div>
 
@@ -77,6 +78,7 @@ const HowItWork = () => {
             src={br}
             alt="space"
             className="mx-[100px] mobile:mx-0 mobile:rotate-90 mobile:my-0"
+            draggable={false}
           />
 
           <FeatureCard
@@ -84,7 +86,7 @@ const HowItWork = () => {
             text="Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley"
-            icon={a}
+            icon={legalLogo}
           />
         </div>
       </div>
