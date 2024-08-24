@@ -1,12 +1,11 @@
-import Button from '@components/Button';
+import Button from '@/components/Button';
 
-import paymentShot from '@images/who-are-we/Widget-title.svg';
-import paymentShotMobile from '@images/who-are-we/Widget-title-mobile.svg';
-import vector from '@images/who-are-we/Vector(2).svg';
-import vectorVertical from '@images/who-are-we/Vector(3).svg';
-
-import chartShot from '@images/who-are-we/Protips.svg';
-import chartShotMobile from '@images/who-are-we/Protips(1).svg';
+import chartShot from 'public/images/who-are-we/Protips.svg';
+import vector from 'public/images/who-are-we/Vector(2).svg';
+import vectorVertical from 'public/images/who-are-we/Vector(3).svg';
+import paymentShot from 'public/images/who-are-we/Widget-title.svg';
+import chartShotMobile from 'public/images/who-are-we/Protips(1).svg';
+import paymentShotMobile from 'public/images/who-are-we/Widget-title-mobile.svg';
 
 const HowAreWe = () => {
   return (
@@ -25,17 +24,24 @@ const HowAreWe = () => {
           they require to cancel.
         </p>
 
-        <img src={paymentShot} alt="payment" className="mobile:hidden" />
+        <img
+          src={paymentShot}
+          alt="payment"
+          className="mobile:hidden"
+          draggable={false}
+        />
         <img
           src={paymentShotMobile}
           alt="payment-mobile"
           className="desktop:hidden"
+          draggable={false}
         />
 
         <img
           src={vector}
           alt="vector"
           className="-z-20 absolute top-0 left-0 right-0 w-full"
+          draggable={false}
         />
       </div>
 
@@ -58,17 +64,20 @@ const HowAreWe = () => {
           src={chartShot}
           alt="payment"
           className="mobile:hidden mb-[58px] mt-[80px] shadow-image-shadow border-1 border-[#E4E7EC]"
+          draggable={false}
         />
         <img
           src={chartShotMobile}
           alt="payment-mobile"
           className="desktop:hidden shadow-image-shadow border-1 border-[#E4E7EC]"
+          draggable={false}
         />
 
         <img
           src={vectorVertical}
           alt="vector"
           className="-z-20 absolute bottom-0 left-0 right-0 w-full"
+          draggable={false}
         />
       </div>
     </div>

@@ -1,8 +1,8 @@
 import cn from 'classnames';
 
-import SingleIcon from '@assets/SingleIcon';
-import StreamIcon from '@assets/StreamIcon';
-import VestingIcon from '@assets/VestingIcon';
+import SingleIcon from '@/assets/SingleIcon';
+import StreamIcon from '@/assets/StreamIcon';
+import VestingIcon from '@/assets/VestingIcon';
 
 export type BoxIconType = 'single' | 'vesting' | 'stream';
 
