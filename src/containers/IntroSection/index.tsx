@@ -1,9 +1,8 @@
-import Button from '@components/Button';
+import Button from '@/components/Button';
+import Box from '@/components/Box';
 
-import Box from '@components/Box';
-
-import mock from '@images/15.png';
-import mockMobileSize from '@images/mockupMobileSize.png';
+import mock from 'public/images/15.png';
+import mockMobileSize from 'public/images/mockupMobileSize.png';
 
 const IntroSection = () => {
   return (

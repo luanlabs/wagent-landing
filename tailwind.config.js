@@ -21,6 +21,7 @@ export default {
           'inset #454d44 0px -1.4px 0px, inset #454d44 0px 2px 0px',
         'green-shadow': 'inset #464A46 0px -3px 0px',
         'box-shadow': '0px 28px 28.1px -21px rgba(0, 0, 0, 0.06)',
+        'image-shadow': '0px 9px 21.8px -8px rgba(49, 128, 121, 0.16)',
       },
     },
   },

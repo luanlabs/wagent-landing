@@ -1,8 +1,12 @@
-import Header from '@containers/Header';
-import IntroSection from '@containers/IntroSection';
+import IntroSection from '@/containers/IntroSection';
+import HowItWork from '@/containers/HowItWork';
+import HowAreWe from '@/containers/HowAreWe';
+import Header from '@/containers/Header';
 
-import greenGradient from '@images/BackgroundGradients.svg';
-import greenBackground from '@images/GreenEclipse.svg';
+import greenBackground from 'public/images/GreenEclipse.svg';
+import greenBack from 'public/images/how-it-work/Eclipse.svg';
+import greenGradient from 'public/images/BackgroundGradients.svg';
+import greenBackMobile from 'public/images/how-it-work/Eclipse(3)Mobile.svg';
 
 function App() {
   return (
@@ -26,6 +30,26 @@ function App() {
             className="absolute top-0 right-[20%] opacity-15 mobile:hidden -z-10"
           />
           <IntroSection />
+        </div>
+
+        <div className="mt-[140px] mobile:mt-[63px] relative">
+          <HowItWork />
+          <img
+            src={greenBack}
+            alt="green"
+            draggable={false}
+            className="absolute -left-[20%] top-0 opacity-15 bigScreen:opacity-55 -z-10 mobile:hidden"
+          />
+          <img
+            src={greenBackMobile}
+            alt="green"
+            draggable={false}
+            className="desktop:hidden absolute -top-[21%] opacity-10 -z-10"
+          />
+        </div>
+
+        <div className="mt-[157px] mobile:mt-[75px]">
+          <HowAreWe />
         </div>
       </div>
     </section>
