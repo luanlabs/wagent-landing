@@ -1,16 +1,16 @@
-import Button from '@components/Button';
-import TeamMember from '@components/TeamMember';
+import Button from '@/components/Button';
+import TeamMember from '@/components/TeamMember';
 
-import { headerTabs } from '../../constants/headerLinks';
+import { headerTabs } from '@/constants/headerLinks';
 
-import armIcon from '@images/footer/arm.svg';
-import xLogo from '@images/footer/X_logo.svg';
-import team from '@images/footer/Rectangle.png';
-import wagentLogo from '@images/footer/Group.svg';
-import githubLogo from '@images/footer/GitHub.svg';
-import discordLogo from '@images/footer/Discord.svg';
-import wagentIcon from '@images/footer/Artboard.svg';
-import unlimitedIcon from '@images/footer/Unlimited.svg';
+import armIcon from 'public/images/footer/arm.svg';
+import xLogo from 'public/images/footer/X_logo.svg';
+import team from 'public/images/footer/Rectangle.png';
+import wagentLogo from 'public/images/footer/Group.svg';
+import githubLogo from 'public/images/footer/GitHub.svg';
+import discordLogo from 'public/images/footer/Discord.svg';
+import wagentIcon from 'public/images/footer/Artboard.svg';
+import unlimitedIcon from 'public/images/footer/Unlimited.svg';
 
 const socialLogo = [discordLogo, xLogo, githubLogo];
 
