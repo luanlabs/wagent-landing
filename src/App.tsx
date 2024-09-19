@@ -1,7 +1,8 @@
-import IntroSection from '@/containers/IntroSection';
-import HowItWork from '@/containers/HowItWork';
-import HowAreWe from '@/containers/HowAreWe';
 import Header from '@/containers/Header';
+import Footer from '@/containers/Footer';
+import HowAreWe from '@/containers/HowAreWe';
+import HowItWork from '@/containers/HowItWork';
+import IntroSection from '@/containers/IntroSection';
 
 import greenBackground from 'public/images/GreenEclipse.svg';
 import greenBack from 'public/images/how-it-work/Eclipse.svg';
@@ -51,6 +52,10 @@ function App() {
         <div className="mt-[157px] mobile:mt-[75px]">
           <HowAreWe />
         </div>
+      </div>
+
+      <div className="w-[95%] m-auto mt-[157px] mb-[34px]">
+        <Footer />
       </div>
     </section>
   );
