@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  wagent-landing:
+    image: wagent-landing:latest
+    pull_policy: never
+    restart: on-failure
+    ports:
+      - "3005:3000"

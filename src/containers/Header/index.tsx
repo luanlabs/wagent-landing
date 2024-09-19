@@ -1,15 +1,15 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import Button from '@/components/Button';
+import Button from "@/components/Button";
 
-import { headerTabs } from '@/constants/headerLinks';
+import { headerTabs } from "@/constants/headerLinks";
 
-import wagentLogo from 'public/images/wagent.svg';
+import wagentLogo from "public/images/wagent.svg";
 
 const Header = () => {
-  const [activeTab, setActiveTab] = useState('/home');
+  const [activeTab, setActiveTab] = useState("/home");
 
-  const handleTabClick = (e, link: string) => {
+  const handleTabClick = (e: any, link: string) => {
     e.preventDefault();
     setActiveTab(link);
   };
@@ -24,7 +24,7 @@ const Header = () => {
             key={x.link}
             href={x.link}
             className={`text-[14px] flex items-center justify-center text-black rounded-[26px] w-auto h-[27px] px-3 select-none ${
-              activeTab === x.link ? 'bg-[#F5F5F5]' : ''
+              activeTab === x.link ? "bg-[#F5F5F5]" : ""
             }`}
             onClick={(e) => handleTabClick(e, x.link)}
           >
