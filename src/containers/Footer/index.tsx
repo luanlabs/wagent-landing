@@ -1,11 +1,9 @@
 import Button from "@/components/Button";
-import TeamMember from "@/components/TeamMember";
 
 import { headerTabs } from "@/constants/headerLinks";
 
 import armIcon from "public/images/footer/arm.svg";
 import xLogo from "public/images/footer/X_logo.svg";
-import team from "public/images/footer/Rectangle.png";
 import wagentLogo from "public/images/footer/Group.svg";
 import githubLogo from "public/images/footer/GitHub.svg";
 import discordLogo from "public/images/footer/Discord.svg";

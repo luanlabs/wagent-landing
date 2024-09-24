@@ -1,5 +1,3 @@
-import Button from "@/components/Button";
-
 import chartShot from "public/images/who-are-we/Protips.svg";
 import vector from "public/images/who-are-we/Vector(2).svg";
 import vectorVertical from "public/images/who-are-we/Vector(3).svg";
