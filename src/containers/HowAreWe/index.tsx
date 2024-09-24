@@ -1,27 +1,24 @@
-import Button from '@/components/Button';
+import Button from "@/components/Button";
 
-import chartShot from 'public/images/who-are-we/Protips.svg';
-import vector from 'public/images/who-are-we/Vector(2).svg';
-import vectorVertical from 'public/images/who-are-we/Vector(3).svg';
-import paymentShot from 'public/images/who-are-we/Widget-title.svg';
-import chartShotMobile from 'public/images/who-are-we/Protips(1).svg';
-import paymentShotMobile from 'public/images/who-are-we/Widget-title-mobile.svg';
+import chartShot from "public/images/who-are-we/Protips.svg";
+import vector from "public/images/who-are-we/Vector(2).svg";
+import vectorVertical from "public/images/who-are-we/Vector(3).svg";
+import paymentShot from "public/images/who-are-we/Widget-title.svg";
+import chartShotMobile from "public/images/who-are-we/Protips(1).svg";
+import paymentShotMobile from "public/images/who-are-we/Widget-title-mobile.svg";
 
 const HowAreWe = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full overflow-hidden space-y-[58px] mobile:space-y-[35px]">
       <div className="flex flex-col items-center justify-center bg-[#F7FAFA] rounded-[20px] relative -z-0 w-[90%] bigScreen:w-full overflow-hidden">
-        <div className="w-[103px] mt-[68px]">
-          <Button variant="simpleWhiteStatic" text="How it works" />
-        </div>
-
         <h1 className="text-center text-[#30382E] text-[30px] mobile:text-[20px] font-bold my-4 w-[65%] bigScreen:w-[45%] mobile:w-[90%] z-50">
-          Monitor every detail and event. Just one click away from seeing all
-          the details
+          Monitor every transaction. Just one click away from seeing all the
+          details
         </h1>
         <p className="text-center text-[#6A786B] text-base mb-[47px] w-[35%] bigScreen:w-[25%] mobile:w-[90%]">
-          You may track the status of stream transactions and determine the time
-          they require to cancel.
+          Track and manage all your transactions effortlessly with Wagent's
+          user-friendly dashboard, providing real-time insights and detailed
+          history.
         </p>
 
         <img
@@ -46,18 +43,14 @@ const HowAreWe = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center bg-[#F7FAFA] rounded-[20px] relative -z-0 w-[90%] bigScreen:w-full overflow-hidden">
-        <div className="w-[103px] mt-[68px]">
-          <Button variant="simpleWhiteStatic" text="Who are we?" />
-        </div>
-
         <h1 className="text-center text-[#30382E] text-[30px] mobile:text-[20px] font-bold my-4 w-[65%] bigScreen:w-[45%] mobile:w-[90%] z-50">
           Revenue insights:
           <br />
           See your earnings at a glance
         </h1>
         <p className="text-center text-[#6A786B] text-base mobile:text-[14px] mb-[47px] w-[35%] bigScreen:w-[25%] mobile:w-[90%]">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
+          View and analyze your earnings over customizable time periods, gaining
+          valuable insights into your income trends."
         </p>
 
         <img

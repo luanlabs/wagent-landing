@@ -1,16 +1,16 @@
-import Button from '@/components/Button';
-import TeamMember from '@/components/TeamMember';
+import Button from "@/components/Button";
+import TeamMember from "@/components/TeamMember";
 
-import { headerTabs } from '@/constants/headerLinks';
+import { headerTabs } from "@/constants/headerLinks";
 
-import armIcon from 'public/images/footer/arm.svg';
-import xLogo from 'public/images/footer/X_logo.svg';
-import team from 'public/images/footer/Rectangle.png';
-import wagentLogo from 'public/images/footer/Group.svg';
-import githubLogo from 'public/images/footer/GitHub.svg';
-import discordLogo from 'public/images/footer/Discord.svg';
-import wagentIcon from 'public/images/footer/Artboard.svg';
-import unlimitedIcon from 'public/images/footer/Unlimited.svg';
+import armIcon from "public/images/footer/arm.svg";
+import xLogo from "public/images/footer/X_logo.svg";
+import team from "public/images/footer/Rectangle.png";
+import wagentLogo from "public/images/footer/Group.svg";
+import githubLogo from "public/images/footer/GitHub.svg";
+import discordLogo from "public/images/footer/Discord.svg";
+import wagentIcon from "public/images/footer/Artboard.svg";
+import unlimitedIcon from "public/images/footer/Unlimited.svg";
 
 const socialLogo = [discordLogo, xLogo, githubLogo];
 
@@ -19,34 +19,33 @@ const Footer = () => {
     <div className="flex flex-col justify-center items-center bg-[#1D201D] rounded-[30px] overflow-hidden">
       <div className="mt-[109px] mb-[31px]">
         <h1 className="text-center text-[#fff] text-[36px] mobile:text-[28px] font-medium my-4 z-50 mobile:px-3">
-          Become a Strategy Provider or Follower
+          Ready to boost your business?
         </h1>
-        <p className="text-center text-[#fff] opacity-[0.4] text-base mobile:text-[18px] w-[80%] m-auto">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy
-        </p>
+        <p className="text-center text-[#fff] opacity-[0.4] text-base mobile:text-[18px] w-[80%] m-auto"></p>
       </div>
 
       <div className="flex mobile:flex-col mobile:space-y-[31px]">
         <div className="space-y-[12px] flex flex-col justify-center items-center">
           <img src={unlimitedIcon} alt="unlimitedIcon" draggable={false} />
-          <h1 className="text-[20px] text-[#fff]">Number 1 </h1>
+          <h1 className="text-[20px] text-[#fff]">Create Your Free Account</h1>
           <p className="text-center text-[#fff] opacity-[0.4] text-base mobile:text-[14px] w-[70%] bigScreen:w-[59%]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the in
+            Customize your preferences in the Settings page and copy your API
+            KEY for integration
           </p>
         </div>
 
         <div className="space-y-[12px] flex flex-col justify-center items-center">
           <img src={armIcon} alt="armIcon" draggable={false} />
-          <h1 className="text-[20px] text-[#fff]">Number 2</h1>
+          <h1 className="text-[20px] text-[#fff]">Connect Your Store</h1>
           <p className="text-center text-[#fff] opacity-[0.4] text-base mobile:text-[14px] w-[70%] bigScreen:w-[59%]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the in
+            Easily integrate Wagent with your e-commerce platform via our
+            plugins for WordPress, Shopify, and more.
           </p>
         </div>
       </div>
 
+      {/*o
+         *
       <div className="mt-[135px] mobile:mt-[103px] w-full flex flex-col justify-center items-center">
         <div className="w-[82px]">
           <Button variant="simpleGreen" text="Our Team" />
@@ -79,20 +78,21 @@ const Footer = () => {
           />
         </div>
       </div>
+         */}
 
       <div className="mt-[205px] flex flex-col justify-center items-center">
         <img src={wagentLogo} alt="armIcon" draggable={false} />
         <h1 className="text-[30px] mobile:text-[24px] mt-[24px] font-medium text-center text-[#fff]">
-          Start Your Innovation Journey Today
+          Get Started with Wagent Today!
         </h1>
         <p className="text-center text-[#fff] opacity-[0.6] text-base mobile:text-[14px] mobile:px-4">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
+          Sign up now and integrate Wagent’s powerful payment gateway in just a
+          few minutes!
         </p>
         <div className="space-x-6 flex items-center mt-6">
           <Button
             variant="basicBlack"
-            text="Request Access"
+            text="Register Now"
             className="w-[150px]"
           />
           <a href="" className="text-[#fff] text-[14px] w-[120px]">
@@ -129,11 +129,6 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <p className="text-left text-[#fff] opacity-[0.7] text-base mobile:text-[14px] mt-[36px]">
-          In today's dynamic marketplace, the ability to sell effectively is
-          more crucial than ever. Yet, traditional sales training often falls
-          short in providing lasting results.
-        </p>
       </div>
     </div>
   );
