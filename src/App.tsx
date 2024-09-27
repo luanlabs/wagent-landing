@@ -30,10 +30,12 @@ function App() {
             draggable={false}
             className="absolute top-0 right-[20%] opacity-15 mobile:hidden -z-10"
           />
-          <IntroSection />
+          <div id="home">
+            <IntroSection />
+          </div>
         </div>
 
-        <div className="mt-[140px] mobile:mt-[63px] relative">
+        <div className="mt-[140px] mobile:mt-[63px] relative" id="howitworks">
           <HowItWork />
           <img
             src={greenBack}
@@ -49,7 +51,7 @@ function App() {
           />
         </div>
 
-        <div className="mt-[157px] mobile:mt-[75px]">
+        <div className="mt-[157px] mobile:mt-[75px]" id="features">
           <HowAreWe />
         </div>
       </div>

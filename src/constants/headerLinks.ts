@@ -1,19 +1,11 @@
 export const headerTabs = [
-  { name: 'Home', link: '/home' },
-  {
-    name: 'About',
-    link: '/about',
-  },
-  {
-    name: 'Our Team',
-    link: '/ourteam',
-  },
+  { name: 'Home', link: '#home' },
   {
     name: 'How it works',
-    link: '/howitworks',
+    link: '#howitworks',
   },
   {
     name: 'Features',
-    link: '/features',
+    link: '#features',
   },
 ];

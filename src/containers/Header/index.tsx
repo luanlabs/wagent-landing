@@ -1,16 +1,15 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import Button from "@/components/Button";
+import Button from '@/components/Button';
 
-import { headerTabs } from "@/constants/headerLinks";
+import { headerTabs } from '@/constants/headerLinks';
 
-import wagentLogo from "public/images/wagent.svg";
+import wagentLogo from 'public/images/wagent.svg';
 
 const Header = () => {
-  const [activeTab, setActiveTab] = useState("/home");
+  const [activeTab, setActiveTab] = useState('#home');
 
   const handleTabClick = (e: any, link: string) => {
-    e.preventDefault();
     setActiveTab(link);
   };
 
@@ -24,7 +23,7 @@ const Header = () => {
             key={x.link}
             href={x.link}
             className={`text-[14px] flex items-center justify-center text-black rounded-[26px] w-auto h-[27px] px-3 select-none ${
-              activeTab === x.link ? "bg-[#F5F5F5]" : ""
+              activeTab === x.link ? 'bg-[#F5F5F5]' : ''
             }`}
             onClick={(e) => handleTabClick(e, x.link)}
           >
@@ -33,8 +32,17 @@ const Header = () => {
         ))}
       </div>
 
-      <div className="w-[85px] z-50">
-        <Button variant="bordered" text="Launch app" />
+      <div className="z-50 flex items-center space-x-3">
+        <a
+          href="https://docs.wagent.app"
+          target="_blank"
+          className="w-[85px] text-[12px] text-black"
+        >
+          Documentation
+        </a>
+        <a href="https://panel.wagent.app" target="_blank" className="w-[85px]">
+          <Button variant="bordered" text="Launch app" />
+        </a>
       </div>
     </header>
   );

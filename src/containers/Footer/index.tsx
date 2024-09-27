@@ -1,16 +1,20 @@
-import Button from "@/components/Button";
+import Button from '@/components/Button';
 
-import { headerTabs } from "@/constants/headerLinks";
+import { headerTabs } from '@/constants/headerLinks';
 
-import armIcon from "public/images/footer/arm.svg";
-import xLogo from "public/images/footer/X_logo.svg";
-import wagentLogo from "public/images/footer/Group.svg";
-import githubLogo from "public/images/footer/GitHub.svg";
-import discordLogo from "public/images/footer/Discord.svg";
-import wagentIcon from "public/images/footer/Artboard.svg";
-import unlimitedIcon from "public/images/footer/Unlimited.svg";
+import armIcon from 'public/images/footer/arm.svg';
+import xLogo from 'public/images/footer/X_logo.svg';
+import wagentLogo from 'public/images/footer/Group.svg';
+import githubLogo from 'public/images/footer/GitHub.svg';
+import discordLogo from 'public/images/footer/Discord.svg';
+import wagentIcon from 'public/images/footer/Artboard.svg';
+import unlimitedIcon from 'public/images/footer/Unlimited.svg';
 
-const socialLogo = [discordLogo, xLogo, githubLogo];
+const social = [
+  { logo: discordLogo, link: '/' },
+  { logo: xLogo, link: 'https://x.com/luanlabs' },
+  { logo: githubLogo, link: 'https://github.com/luanlabs/wagent-payment' },
+];
 
 const Footer = () => {
   return (
@@ -88,12 +92,19 @@ const Footer = () => {
           few minutes!
         </p>
         <div className="space-x-6 flex items-center mt-6">
-          <Button
-            variant="basicBlack"
-            text="Register Now"
+          <a
+            href="https://panel.wagent.app/signup"
+            target="_blank"
             className="w-[150px]"
-          />
-          <a href="" className="text-[#fff] text-[14px] w-[120px]">
+          >
+            <Button variant="basicBlack" text="Register Now" />
+          </a>
+
+          <a
+            href="https://docs.wagent.app"
+            target="_blank"
+            className="text-[#fff] text-[14px] !w-[120px]"
+          >
             Learn more
           </a>
         </div>
@@ -101,7 +112,7 @@ const Footer = () => {
 
       <div className="w-full bg-[#262C26] mt-[113px] px-[200px] py-[100px] mobile:px-8 mobile:py-[30px]">
         <div className="flex items-center justify-between mobile:flex-wrap">
-          <a href="/">
+          <a href="https://panel.wagent.app" target="_blank">
             <img src={wagentIcon} alt="wagentLogo2" draggable={false} />
           </a>
 
@@ -118,11 +129,17 @@ const Footer = () => {
           </div>
 
           <div className="space-x-[8px] flex">
-            {socialLogo.map((logo) => (
+            {social.map((x) => (
               <a
+                href={x.link}
                 className={`text-[14px] flex items-center justify-center w-[44px] h-[36px] text-white rounded-[26px] select-none bg-[#ffffff0a] hover:bg-[#ffffff1a] transition cursor-pointer`}
+                target="_blank"
               >
-                <img src={logo} alt={logo} width={logo === xLogo ? 12 : 28} />
+                <img
+                  src={x.logo}
+                  alt={x.logo}
+                  width={x.logo === xLogo ? 12 : 28}
+                />
               </a>
             ))}
           </div>
