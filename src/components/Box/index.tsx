@@ -29,8 +29,8 @@ const Box = ({ title, subTitle, icon, className }: BoxProps) => {
     >
       <div className="flex justify-center">{icons}</div>
 
-      <p className="mt-[23px] font-medium">{title}</p>
-      <p className="text-[rgba(0, 0, 0, 0.60)]">{subTitle}</p>
+      <p className="mt-[23px] font-medium text-lg">{title}</p>
+      <p className="text-[#00000099] mt-2">{subTitle}</p>
     </div>
   );
 };
