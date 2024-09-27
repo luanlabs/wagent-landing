@@ -1,8 +1,8 @@
-import Button from "@/components/Button";
-import Box from "@/components/Box";
+import Button from '@/components/Button';
+import Box from '@/components/Box';
 
-import mock from "public/images/15.png";
-import mockMobileSize from "public/images/mockupMobileSize.png";
+import mock from 'public/images/15.png';
+import mockMobileSize from 'public/images/mockupMobileSize.png';
 
 const IntroSection = () => {
   return (
@@ -21,16 +21,21 @@ const IntroSection = () => {
           feature-rich merchant payment gateway.
         </p>
         <div className="flex space-x-2 mt-[24px] w-full mobile:justify-center">
-          <Button
-            variant="simpleDark"
-            text="Launch app"
-            className="!w-[110px]"
-          />
-          <Button
-            variant="simpleWhite"
-            text="Learn more"
-            className="!w-[131px]"
-          />
+          <a href="https://panel.wagent.app">
+            <Button
+              variant="simpleDark"
+              text="Launch app"
+              className="!w-[110px]"
+            />
+          </a>
+
+          <a href="https://docs.wagent.app">
+            <Button
+              variant="simpleWhite"
+              text="Learn more"
+              className="!w-[131px]"
+            />
+          </a>
         </div>
 
         <div className="mt-[150px] mobile:mt-[45px] flex items-center mobile:flex-col">
@@ -44,21 +49,19 @@ const IntroSection = () => {
             />
           </div>
           <div className="flex mobile:flex-col mobile:space-y-2 w-full space-x-[32px] mobile:space-x-0 mobile:mt-[35px] mobile:px-6">
-            <div className="flex mobile:w-full mobile:space-x-2 space-x-[32px]">
+            <div className="flex mobile:w-full mobile:space-x-0 mobile:space-y-3 mobile:flex-col space-x-[32px] w-[50%]">
               <Box
                 title="Direct"
                 subTitle="Enables instant transfer of funds to merchants in a single, seamless transaction."
                 icon="single"
-                className="mobile:!w-[50%]"
+                className="w-full"
               />
-            </div>
 
-            <div className="mobile:w-full">
               <Box
                 title="Stream"
                 subTitle="Enables funds to be transferred gradually over time, providing continuous transactions"
                 icon="stream"
-                className="mobile:!w-full"
+                className="w-full"
               />
             </div>
           </div>

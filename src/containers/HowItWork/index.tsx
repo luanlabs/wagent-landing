@@ -1,10 +1,10 @@
-import Button from "@/components/Button";
-import FeatureCard from "@/components/FeatureCard";
+import Button from '@/components/Button';
+import FeatureCard from '@/components/FeatureCard';
 
-import planet from "public/images/how-it-work/Planet.svg";
-import legalLogo from "public/images/how-it-work/legal.svg";
-import br from "public/images/how-it-work/Group1000004656.svg";
-import dataLogo from "public/images/how-it-work/data-translate.svg";
+import planet from 'public/images/how-it-work/Planet.svg';
+import legalLogo from 'public/images/how-it-work/legal.svg';
+import br from 'public/images/how-it-work/Group1000004656.svg';
+import dataLogo from 'public/images/how-it-work/data-translate.svg';
 
 const HowItWork = () => {
   return (
