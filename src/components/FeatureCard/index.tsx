@@ -6,7 +6,7 @@ interface FeatureCardProps {
 
 const FeatureCard = ({ title, text, icon }: FeatureCardProps) => {
   return (
-    <div className="flex items-start justify-center space-x-[26px] mobile:space-x-0 w-auto rounded-[15px] mobile:bg-white mobile:w-[314px] mobile:h-[200px] mobile:flex-col">
+    <div className="flex items-start justify-center space-x-[26px] mobile:space-x-0 w-full rounded-[15px] mobile:bg-white mobile:w-[314px] mobile:h-[200px] mobile:flex-col">
       <div className="mobile:hidden">
         <div className="bg-white !h-[76px] !w-[76px] mobile:h-[42px] mobile:w-[42px] flex justify-center items-center rounded-[12px] shadow-box-shadow">
           <img src={icon} alt="data" draggable={false} />
