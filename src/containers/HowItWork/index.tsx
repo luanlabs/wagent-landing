@@ -26,7 +26,10 @@ const HowItWork = () => {
         </p>
       </div>
 
-      <div className="flex-col items-start mt-[183px] mobile:mt-[81px] w-full space-y-4 z-50 mobile:px-5">
+      <div
+        className="flex-col items-start mt-[183px] mobile:mt-[81px] w-full space-y-4 z-50 mobile:px-5"
+        id="howitworks"
+      >
         <div className="w-[103px] z-50 mobile:m-auto">
           <Button variant="simpleWhiteStatic" text="How it works" />
         </div>

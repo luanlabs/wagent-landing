@@ -42,7 +42,7 @@ const IntroSection = () => {
           <div>
             <img
               src={mockMobileSize}
-              alt="an"
+              alt="gradient"
               width={1400}
               draggable={false}
               className="desktop:hidden select-none"
@@ -70,7 +70,7 @@ const IntroSection = () => {
       <div>
         <img
           src={mock}
-          alt="an"
+          alt="gradient"
           className="absolute top-[-40px] right-0 mobile:hidden desktopFix:right-[-120px] select-none"
           draggable={false}
           width={1000}

@@ -35,7 +35,7 @@ function App() {
           </div>
         </div>
 
-        <div className="mt-[140px] mobile:mt-[63px] relative" id="howitworks">
+        <div className="mt-[140px] mobile:mt-[63px] relative">
           <HowItWork />
           <img
             src={greenBack}
