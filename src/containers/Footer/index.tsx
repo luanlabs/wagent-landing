@@ -6,14 +6,14 @@ import armIcon from 'public/images/footer/arm.svg';
 import xLogo from 'public/images/footer/X_logo.svg';
 import wagentLogo from 'public/images/footer/Group.svg';
 import githubLogo from 'public/images/footer/GitHub.svg';
-import discordLogo from 'public/images/footer/Discord.svg';
+// import discordLogo from 'public/images/footer/Discord.svg';
 import wagentIcon from 'public/images/footer/Artboard.svg';
 import unlimitedIcon from 'public/images/footer/Unlimited.svg';
 
 const social = [
-  { logo: discordLogo, link: '/' },
+  // { logo: discordLogo, link: '/' },
   { logo: xLogo, link: 'https://x.com/luanlabs' },
-  { logo: githubLogo, link: 'https://github.com/luanlabs/wagent-payment' },
+  { logo: githubLogo, link: 'https://github.com/luanlabs' },
 ];
 
 const Footer = () => {
