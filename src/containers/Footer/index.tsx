@@ -9,11 +9,13 @@ import githubLogo from 'public/images/footer/GitHub.svg';
 // import discordLogo from 'public/images/footer/Discord.svg';
 import wagentIcon from 'public/images/footer/Artboard.svg';
 import unlimitedIcon from 'public/images/footer/Unlimited.svg';
+import telegramIcon from 'public/images/footer/telegram.svg';
 
 const social = [
   // { logo: discordLogo, link: '/' },
-  { logo: xLogo, link: 'https://x.com/luanlabs' },
-  { logo: githubLogo, link: 'https://github.com/luanlabs' },
+  { logo: xLogo, link: 'https://x.com/luanlabs', width: 12 },
+  { logo: githubLogo, link: 'https://github.com/luanlabs', width: 28 },
+  { logo: telegramIcon, link: 'https://t.me/wagentofficial', width: 18 },
 ];
 
 const Footer = () => {
@@ -135,11 +137,7 @@ const Footer = () => {
                 className={`text-[14px] flex items-center justify-center w-[44px] h-[36px] text-white rounded-[26px] select-none bg-[#ffffff0a] hover:bg-[#ffffff1a] transition cursor-pointer`}
                 target="_blank"
               >
-                <img
-                  src={x.logo}
-                  alt={x.logo}
-                  width={x.logo === xLogo ? 12 : 28}
-                />
+                <img src={x.logo} alt={x.logo} width={x.width} />
               </a>
             ))}
           </div>
